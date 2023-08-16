@@ -42,7 +42,7 @@ public class TransparentWindow : MonoBehaviour {
 
     void Start() {
         // MessageBox(new IntPtr(0), "Hello World!", "Hello dialog", 0);
-
+        Debug.Log(Convert.ToUInt32("FF00FF", 16)); //Using ToUInt32 not ToUInt64, as per OP comment
 #if !UNITY_EDITOR
         IntPtr hWnd = GetActiveWindow();
         MARGINS margins =  new MARGINS{ cxLeftWidth = -1 };
