@@ -1,10 +1,15 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 
 public class MessageBoxManager : MonoBehaviour {
+
+    IEnumerator SetLocale(int _localeID) {
+        yield return LocalizationSettings.InitializationOperation;
+    }
+
     const uint MB_ICONERROR = 0x00000010;
     const int OK = 1;
     const int CANCEL = 2;
@@ -45,5 +50,13 @@ public class MessageBoxManager : MonoBehaviour {
         }
 
         return;
+    }
+
+
+    void Start() {
+        var error = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI", "ERROR").Result;
+
+        DisplayMessage(error, "Mira que te hemos dicho que no pulses el botón.", MessageBoxManager.MESSAGE_TYPE.ERROR);
+
     }
 }

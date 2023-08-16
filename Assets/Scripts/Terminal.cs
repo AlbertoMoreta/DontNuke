@@ -29,6 +29,7 @@ public class Terminal : MonoBehaviour {
  
     private void ProcessCommand(string command) {
         switch(command.ToLower()) {
+            case "ayuda":
             case "help": PrintHelp(); break;
         }
     }
