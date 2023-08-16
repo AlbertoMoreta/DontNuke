@@ -30,6 +30,8 @@ public class DialogManager : MonoBehaviour {
     private List<Subtitle> currentDialog;
     private int currentDialogLine = 0;
 
+    private AvatarAnimationController avatarAnimationController;
+
     public static DialogManager Instance {
         get; private set;
     }
@@ -59,6 +61,7 @@ public class DialogManager : MonoBehaviour {
         }
 
         audioSource = GetComponent<AudioSource>();
+        avatarAnimationController = AvatarAnimationController.Instance;
     }
 
     public void Clear() {
@@ -99,27 +102,30 @@ public class DialogManager : MonoBehaviour {
     public IEnumerator DisplayNextSubtitle() {
         var sub = currentDialog[currentDialogLine];
         Debug.Log("DISPLAYING NEXT SUBTITLE LINE:" + sub);
-        // var character = GameObject.Find(sub.characterName);
-        // dialogBox.transform.parent = character.transform.parent;
-        // float xOffset = 0;
-        // Debug.Log("Position: " + sub.position);
-        // switch(sub.position) {
-        //     case DIALOG_BOX_POSITIONS.RIGHT: {
-        //         xOffset = -dialogBoxOffset;
-        //         _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
-        //         break;
-        //     }
-        //     case DIALOG_BOX_POSITIONS.LEFT:{
-        //         xOffset = dialogBoxOffset;
-        //         _background.transform.localRotation *= Quaternion.AngleAxis(180, Vector3.forward);
-        //         break;
-        //     }
-        // }
-        // dialogBox.transform.position = character.transform.position + new Vector3(xOffset, dialogBoxHeight, 0);
+        var character = GameObject.Find(sub.characterName);
+        var avatar = avatarAnimationController.GetAvatar(sub.characterName);
+        dialogBox.transform.parent = character.transform;
+        float xOffset = 0;
+        Debug.Log("Position: " + sub.position);
+        switch(sub.position) {
+            case DIALOG_BOX_POSITIONS.RIGHT: {
+                xOffset = -dialogBoxOffset;
+                // _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+                break;
+            }
+            case DIALOG_BOX_POSITIONS.LEFT:{
+                xOffset = dialogBoxOffset;
+                // _background.transform.localRotation *= Quaternion.AngleAxis(180, Vector3.forward);
+                break;
+            }
+        }
+        dialogBox.transform.position = character.transform.position + new Vector3(xOffset, dialogBoxHeight, 0);
+        avatarAnimationController.StartTalking(avatar);
         foreach (char c in sub.text) {
             _subsTextBox.text += c;
             yield return new WaitForSeconds(typeDelay);
         }
+        avatarAnimationController.StopTalking(avatar);
 
         currentDialogLine++;
     }
@@ -128,7 +134,7 @@ public class DialogManager : MonoBehaviour {
         Debug.Log("Stopping subtitles");
         if(_subsTextBox != null) { _subsTextBox.text = ""; }
         if(_background != null) {
-            _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+            // _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
         }   
         dialogBox.transform.parent = _originalParent;
         if(dialogBox != null){
