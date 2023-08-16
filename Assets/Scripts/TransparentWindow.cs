@@ -34,7 +34,7 @@ public class TransparentWindow : MonoBehaviour {
 
 
     void Start() {
-        MessageBoxManager.DisplayMessage("ERROR", "Mira que te hemos dicho que no pulses el botón", MessageBoxManager.MESSAGE_TYPE.ERROR);
+        MessageBoxManager.DisplayMessage("ERROR", "ejecuciñññón", MessageBoxManager.MESSAGE_TYPE.ERROR);
 #if !UNITY_EDITOR
         IntPtr hWnd = GetActiveWindow();
         MARGINS margins =  new MARGINS{ cxLeftWidth = -1 };

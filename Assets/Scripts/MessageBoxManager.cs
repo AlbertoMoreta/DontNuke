@@ -22,9 +22,8 @@ public class MessageBoxManager : MonoBehaviour {
     }
 
 
-    [DllImport("user32.dll")]
+    [DllImport("user32.dll", CharSet = CharSet.Unicode)]
     public static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
-
 
     public static void DisplayMessage(string header, string message, MESSAGE_TYPE type = MESSAGE_TYPE.DEFAULT) {
 
@@ -42,6 +41,9 @@ public class MessageBoxManager : MonoBehaviour {
             case CANCEL: break;
             case TRYAGAIN: break;
             case CONTINUE: break;
+            default: break;
         }
+
+        return;
     }
 }
