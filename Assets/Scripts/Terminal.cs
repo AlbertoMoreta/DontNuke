@@ -37,6 +37,8 @@ public class Terminal : MonoBehaviour {
     private void PrintHelp() {
         content.text += "\n";
         content.text += "Este es un mensaje de ayuda";
+        DialogManager.Instance.StartDialog("1");
+        // Activate character
     }
 
     private void PrintComputerInfo() {

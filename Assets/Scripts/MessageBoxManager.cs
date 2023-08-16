@@ -55,7 +55,6 @@ public class MessageBoxManager : MonoBehaviour {
 
     void Start() {
         var error = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("UI", "ERROR").Result;
-
         DisplayMessage(error, "Mira que te hemos dicho que no pulses el botón.", MessageBoxManager.MESSAGE_TYPE.ERROR);
 
     }

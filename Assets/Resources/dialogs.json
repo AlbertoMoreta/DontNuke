@@ -1,0 +1,23 @@
+{
+   "dialogLines":[
+      {
+         "key":"1",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Hola, soy Alberto",
+               "position": 0,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Y yo soy Mario",
+               "position": 1,
+               "duration":4
+            }
+        ]
+      }
+      
+   ]
+}
