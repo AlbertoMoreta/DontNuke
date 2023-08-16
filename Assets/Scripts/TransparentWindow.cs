@@ -1,15 +1,8 @@
 using UnityEngine;
 using System;
 using System.Runtime.InteropServices;
-using System.Windows.Input;
-using System.IO;
-using System.Security.AccessControl;
 
 public class TransparentWindow : MonoBehaviour {
-
-
-    [DllImport("user32.dll")]
-    public static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
 
     [DllImport("user32.dll")]
     private static extern IntPtr GetActiveWindow();
@@ -41,8 +34,7 @@ public class TransparentWindow : MonoBehaviour {
 
 
     void Start() {
-        // MessageBox(new IntPtr(0), "Hello World!", "Hello dialog", 0);
-        Debug.Log(Convert.ToUInt32("FF00FF", 16)); //Using ToUInt32 not ToUInt64, as per OP comment
+        MessageBoxManager.DisplayMessage("ERROR", "Mira que te hemos dicho que no pulses el botón", MessageBoxManager.MESSAGE_TYPE.ERROR);
 #if !UNITY_EDITOR
         IntPtr hWnd = GetActiveWindow();
         MARGINS margins =  new MARGINS{ cxLeftWidth = -1 };
