@@ -3,36 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Walk : MonoBehaviour {
+
+    public float speed = 5f;
+    public bool shouldMove = true;
     
     Animator animator;
-    // Start is called before the first frame update
+    SpriteRenderer spriteRenderer;
+
     void Start() {
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update() {
-        if(Input.GetKeyDown(KeyCode.W)) {
+        if(Input.GetKey(KeyCode.W)) {
+            if (shouldMove) {
+                transform.position += Vector3.up * speed * Time.deltaTime;
+            }
             animator.SetBool("Forward", false);
             animator.SetBool("Backwards", true);
             animator.SetBool("Left", false);
             animator.SetBool("Right", false);
-        } else if(Input.GetKeyDown(KeyCode.A)) {
+            spriteRenderer.sortingLayerName = "XRay";
+        } else if(Input.GetKey(KeyCode.A)) {
+            if (shouldMove) {
+                transform.position += Vector3.left * speed * Time.deltaTime;
+            }
             animator.SetBool("Forward", false);
             animator.SetBool("Backwards", false);
             animator.SetBool("Left", true);
             animator.SetBool("Right", false);
-        } else if(Input.GetKeyDown(KeyCode.S)) {
+            spriteRenderer.sortingLayerName = "Default";
+        } else if(Input.GetKey(KeyCode.S)) {
+            if (shouldMove) {
+                transform.position += Vector3.down * speed * Time.deltaTime;
+            }
             animator.SetBool("Forward", true);
             animator.SetBool("Backwards", false);
             animator.SetBool("Left", false);
             animator.SetBool("Right", false);
-            
-        } else if(Input.GetKeyDown(KeyCode.D)) {
+            spriteRenderer.sortingLayerName = "Default";
+        } else if(Input.GetKey(KeyCode.D)) {
+            if (shouldMove) {
+                transform.position += Vector3.right * speed * Time.deltaTime;
+            }
             animator.SetBool("Forward", false);
             animator.SetBool("Backwards", false);
             animator.SetBool("Left", false);
             animator.SetBool("Right", true);
+            spriteRenderer.sortingLayerName = "Default";
         } else {
             animator.SetBool("Forward", false);
             animator.SetBool("Backwards", false);
