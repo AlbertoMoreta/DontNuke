@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public enum DIALOG_BOX_POSITIONS {
     LEFT = -1,
@@ -13,10 +12,10 @@ public enum DIALOG_BOX_POSITIONS {
 public class DialogManager : MonoBehaviour {
     
     public GameObject dialogBox;
-    public float dialogBoxOffset = 1f;
-    public float dialogBoxHeight = 1f;
+    public float dialogBoxOffset = 2.8f;
+    public float dialogBoxHeight = 2.2f;
 
-    private TextMeshProUGUI _subsTextBox;
+    private TMP_Text _subsTextBox;
     
     private Transform _originalParent;
 
@@ -46,7 +45,7 @@ public class DialogManager : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        _subsTextBox = GameObject.Find("Subs").GetComponent<TextMeshProUGUI>();
+        _subsTextBox = GameObject.Find("Subs").GetComponent<TMP_Text>();
         _background = GameObject.Find("Background");
         _originalParent = dialogBox.transform.parent;
         dialogBox.SetActive(false);
@@ -93,13 +92,13 @@ public class DialogManager : MonoBehaviour {
 
         dialogBox.SetActive(true);
 
-        StartCoroutine(DisplayNextSubtitle());
+        DisplayNextSubtitle();
 
         yield return null;
 
     }
 
-    public IEnumerator DisplayNextSubtitle() {
+    public void DisplayNextSubtitle() {
         var sub = currentDialog[currentDialogLine];
         Debug.Log("DISPLAYING NEXT SUBTITLE LINE:" + sub);
         var character = GameObject.Find(sub.characterName);
@@ -109,22 +108,25 @@ public class DialogManager : MonoBehaviour {
         Debug.Log("Position: " + sub.position);
         switch(sub.position) {
             case DIALOG_BOX_POSITIONS.RIGHT: {
+                Debug.Log("RIght");
                 xOffset = -dialogBoxOffset;
-                // _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
+                Debug.Log("xOffset: " + xOffset);
+                _background.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                _subsTextBox.rectTransform.pivot = new Vector2(1, 0);
                 break;
             }
             case DIALOG_BOX_POSITIONS.LEFT:{
+                Debug.Log("Left");
                 xOffset = dialogBoxOffset;
-                // _background.transform.localRotation *= Quaternion.AngleAxis(180, Vector3.forward);
+                Debug.Log("xOffset: " + xOffset);
+                _background.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                _subsTextBox.rectTransform.pivot = new Vector2(0, 0);
                 break;
             }
         }
-        dialogBox.transform.position = character.transform.position + new Vector3(xOffset, dialogBoxHeight, 0);
+        dialogBox.transform.localPosition = new Vector3(xOffset, dialogBoxHeight, 0);
         avatarAnimationController.StartTalking(avatar);
-        foreach (char c in sub.text) {
-            _subsTextBox.text += c;
-            yield return new WaitForSeconds(typeDelay);
-        }
+        _subsTextBox.text = sub.text;
         avatarAnimationController.StopTalking(avatar);
 
         currentDialogLine++;
