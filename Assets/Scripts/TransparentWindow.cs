@@ -46,9 +46,6 @@ public class TransparentWindow : MonoBehaviour {
 
         
 #endif
-        // Create directory on the desktop
-        // String path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + Path.DirectorySeparatorChar + "test";
-        // Directory.CreateDirectory(path);
     }
 
 }
