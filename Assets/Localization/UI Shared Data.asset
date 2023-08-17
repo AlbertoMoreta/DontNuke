@@ -39,6 +39,10 @@ MonoBehaviour:
     m_Key: alert_message_5
     m_Metadata:
       m_Items: []
+  - m_Id: 307604500197376
+    m_Key: play
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
