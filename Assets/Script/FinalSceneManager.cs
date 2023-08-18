@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Localization.Plugins.XLIFF.V12;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,7 @@ public class FinalSceneManager : MonoBehaviour {
     public Image cursor;
     private Sprite crosshair1;
     private Sprite crosshair2;
+    public SpriteRenderer brokenScreen;
 
     void Start() {
         crosshair1 = Resources.Load<Sprite>("Cursor_Normal");
@@ -52,6 +54,11 @@ public class FinalSceneManager : MonoBehaviour {
         bombaRenderer.enabled = true;
         bombaAnimator.enabled = true;
 
-        Debug.Log("OnMouseDown");
+        yield return new WaitForSeconds(3f);
+
+        brokenScreen.enabled = true;
+        yield return new WaitForSeconds(1f);
+        MessageBoxManager.DisplayMessage("ERROR", "El disco duro no se ha podido formatear", 0x00000000);
+        Application.Quit();
     }
 }
