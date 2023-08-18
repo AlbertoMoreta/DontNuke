@@ -7,10 +7,12 @@ public class DraggableWindow : MonoBehaviour, IDragHandler {
     private RectTransform rectTransform;
 
     void Start() {
+        Debug.Log("Start Drggable");
         rectTransform = transform.parent.gameObject.GetComponent<RectTransform>();
     }
 
     void IDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData eventData) {
+        Debug.Log("Dragging");
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
