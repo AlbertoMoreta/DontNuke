@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 631341313928036151}
   - component: {fileID: 631341313928036150}
   - component: {fileID: 2253625055720476824}
-  - component: {fileID: 1017828949421636923}
   m_Layer: 0
   m_Name: MarioAvatar
   m_TagString: Untagged
@@ -108,18 +107,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &2253625055720476824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631341313928036137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cab84986c606f44aba1f9e10c338907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1017828949421636923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

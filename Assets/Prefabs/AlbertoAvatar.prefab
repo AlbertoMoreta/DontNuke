@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1702207806260155789}
   - component: {fileID: 1702207806260155827}
   - component: {fileID: 4224200043750952434}
-  - component: {fileID: 7883136432326295778}
   m_Layer: 0
   m_Name: AlbertoAvatar
   m_TagString: Untagged
@@ -108,18 +107,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &4224200043750952434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1702207806260155788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4cab84986c606f44aba1f9e10c338907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7883136432326295778
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

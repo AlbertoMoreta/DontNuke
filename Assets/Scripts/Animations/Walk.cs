@@ -10,10 +10,11 @@ public class Walk : MonoBehaviour {
     public bool shouldAnimate = true;
     private bool foundHole = false;
     private bool canJump = false;
-    
+
     Animator animator;
     SpriteRenderer spriteRenderer;
     Rigidbody2D rigidBody;
+    public GameObject insideTheFall;
 
     void Start() {
         animator = GetComponent<Animator>();
@@ -90,6 +91,7 @@ public class Walk : MonoBehaviour {
         hole.GetComponent<SpriteMask>().enabled = true;
         var holeCollider = hole.GetComponent<PolygonCollider2D>();
         shouldMove = false;
+        shouldAnimate = false;
         DialogManager.Instance.StartDialog("12-found-hole"); 
         yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
         foundHole = true;
@@ -105,7 +107,9 @@ public class Walk : MonoBehaviour {
         var holeFront = GameObject.Find("HoleFront");
         holeFront.GetComponent<SpriteRenderer>().enabled = true;
         rigidBody.gravityScale = gravity;
-        yield return new WaitForSeconds(5);
+        insideTheFall.SetActive(true);
+        yield return new WaitForSeconds(19.5f);
+        insideTheFall.SetActive(false);
         DialogManager.Instance.StartDialog("13-fix-hole");
     }
 
