@@ -21,11 +21,11 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 831489923, guid: 8e589a49f130ae24bade98d28ec5a568, type: 3}
-    - time: 1.6666666
+    - time: 2.1
       value: {fileID: 831489923, guid: 8e589a49f130ae24bade98d28ec5a568, type: 3}
-    - time: 1.8
+    - time: 2.2333333
       value: {fileID: -1670153931, guid: 8e589a49f130ae24bade98d28ec5a568, type: 3}
-    - time: 1.9166666
+    - time: 2.35
       value: {fileID: 1566482819, guid: 8e589a49f130ae24bade98d28ec5a568, type: 3}
     - time: 10.25
       value: {fileID: 1566482819, guid: 8e589a49f130ae24bade98d28ec5a568, type: 3}
@@ -77,4 +77,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 2.3333333
+    functionName: play_sorpresa
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
