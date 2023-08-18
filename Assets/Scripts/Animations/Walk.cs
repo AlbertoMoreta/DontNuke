@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Walk : MonoBehaviour {
 
@@ -111,6 +112,9 @@ public class Walk : MonoBehaviour {
         yield return new WaitForSeconds(19.5f);
         insideTheFall.SetActive(false);
         DialogManager.Instance.StartDialog("13-fix-hole");
+        yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene("MenuGood");  
     }
 
 

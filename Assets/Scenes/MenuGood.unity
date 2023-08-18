@@ -246,7 +246,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:6d4ff82c436956f47a073384c90ff1d3
     m_TableEntryReference:
-      m_KeyId: 804895996719104
+      m_KeyId: 805840650448896
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -806,7 +806,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1445241549}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
-        m_MethodName: OnBrokenPlayClick
+        m_MethodName: OnCorrectPlayClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

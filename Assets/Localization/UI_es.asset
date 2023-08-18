@@ -53,6 +53,16 @@ MonoBehaviour:
     m_Localized: "Escriba 'ayuda' si experimenta alg\xFAn problema con el juego\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 804895996719104
+    m_Localized: "------- Nota de los desarrolladores -------\nEl juego no est\xE1
+      terminado, por favor, NO PULSES PLAY"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805840650448896
+    m_Localized: "------- Nota de los desarrolladores -------\nEl juego est\xE1 100%
+      libre de fallos, por favor, PULSA PLAY"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -13,6 +13,10 @@ public class MenuManager : MonoBehaviour {
         SceneManager.LoadScene("MainScene");  
     }
 
+    public void OnCorrectPlayClick() {
+        SceneManager.LoadScene("Final");  
+    }
+
     // Update is called once per frame
     void Update()
     {

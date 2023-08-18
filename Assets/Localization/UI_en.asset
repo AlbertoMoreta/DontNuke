@@ -46,6 +46,20 @@ MonoBehaviour:
     m_Localized: Play
     m_Metadata:
       m_Items: []
+  - m_Id: 804895996719104
+    m_Localized: '------- Developer''s note -------
+
+      The game is not finished,
+      please, DON''T PRESS PLAY'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805840650448896
+    m_Localized: '------- Developer''s note -------
+
+      The game is 100% free
+      of errors, please, PRESS PLAY'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

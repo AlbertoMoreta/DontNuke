@@ -47,6 +47,14 @@ MonoBehaviour:
     m_Key: terminal_welcome
     m_Metadata:
       m_Items: []
+  - m_Id: 804895996719104
+    m_Key: dont_press_play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 805840650448896
+    m_Key: press_play
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
