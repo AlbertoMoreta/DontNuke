@@ -7,11 +7,22 @@ public class AlertTimer : MonoBehaviour {
 
     private float timeLeft = 3600;
     private bool countDownRunning = false;
-    private TMP_Text alertText;
+    public TMP_Text alertText;
 
-    // Start is called before the first frame update
-    void Start() {
-        alertText = GetComponent<TMP_Text>();
+    public static AlertTimer Instance {
+        get; private set;
+    }
+
+    private void Awake() {
+        if (Instance != null && Instance != this) {
+            Destroy(this);
+            return;
+        }
+        Instance = this;
+    }
+
+    public void Display() {
+        GetComponent<SpriteRenderer>().enabled = true;
         countDownRunning = true;
     }
 

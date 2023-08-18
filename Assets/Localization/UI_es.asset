@@ -49,6 +49,10 @@ MonoBehaviour:
     m_Localized: Jugar
     m_Metadata:
       m_Items: []
+  - m_Id: 604650281054208
+    m_Localized: "Escriba 'ayuda' si experimenta alg\xFAn problema con el juego\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

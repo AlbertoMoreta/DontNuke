@@ -70,6 +70,7 @@ public class DialogManager : MonoBehaviour {
     // Play dialog: DialogManager.Instance.SendMessage("StartDialog", "dialog_key");
     public void StartDialog(string dialogKey) {
         if(!audioSource.isPlaying && !dialogBox.activeSelf){
+            StopSubtitles();
             _currentDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
             // PlayAudio(_currentDialog.audioPath);
             _subtitlesCoroutine = StartCoroutine(DisplaySubtitles(_currentDialog.subtitles));
@@ -127,7 +128,6 @@ public class DialogManager : MonoBehaviour {
         dialogBox.transform.localPosition = new Vector3(xOffset, dialogBoxHeight, 0);
         avatarAnimationController.StartTalking(avatar);
         _subsTextBox.text = sub.text;
-        avatarAnimationController.StopTalking(avatar);
 
         currentDialogLine++;
     }

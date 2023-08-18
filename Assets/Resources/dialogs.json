@@ -1,19 +1,181 @@
 {
    "dialogLines":[
       {
-         "key":"1",
+         "key":"1-alberto-appear",
          "audioPath": "",
          "subtitles":[
             {
                "characterName": "Alberto",
-               "text":"Hola, soy Alberto",
+               "text":"Hola, soy el programador.",
                "position": -1,
                "duration":4
             },
             {
-               "characterName": "Mario",
-               "text":"Y yo soy Mario",
-               "position": 1,
+               "characterName": "Alberto",
+               "text":"Como has ignorado todas las instrucciones que te hemos dado, estoy aquí para ayudarte a solucionar el problema.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Es muy fácil, solo tienes que escribir este comando en la terminal.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"arreglar_juego",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"2-input-wrong-code",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Cierto, necesitas el código de verificación.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Pero bueno, es fácil.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"El código es el año de lanzamiento del primer Monkey Island.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"1990",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"3-format-disk",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Mierda.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Ese era el código que activa el formateo del disco duro en caso de que haya algún error con el juego.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Así borramos todas las pruebas para evitar que nos pongan comentarios negativos o evitar una denuncia.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Pues ya estaría, solo tienes que esperar menos de una hora y todos tus problemas habrán desaparecido.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Igualmente dejanos una valoración positiva del juego, ya que ha sido culpa tuya por tocar un botón que no debías.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Ha sido un placer",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"4-still-there",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"...",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"¿Todavía sigues ahí?",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Ah, que no quieres que se borre el disco duro.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Es verdad, seguro que tienes muchas cosas importantísimas que no quieres que se pierdan.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Vale vale, creo que sé como arreglarlo.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Sólo necesitas introducir la clave maestra.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"...",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Pues no recuerdo cuál es.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Esto me pasa por no apuntar las cosas.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Vamos a necesitar más ayuda para arreglar esto.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Para pedir más ayuda introduce lo siguiente en la terminal.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"mas ayuda",
+               "position": -1,
                "duration":4
             }
         ]

@@ -21,8 +21,8 @@ public class AvatarAnimationController : MonoBehaviour {
         MARIO
     }
 
-    public Animator alberto;
-    public Animator mario;
+    public GameObject alberto;
+    public GameObject mario;
 
     public Avatar GetAvatar(string name) {
         return name.ToLower() switch {
@@ -32,7 +32,7 @@ public class AvatarAnimationController : MonoBehaviour {
         };
     }
 
-    private Animator GetAnimator(Avatar avatar) {
+    private GameObject GetGameObject(Avatar avatar) {
         return avatar switch {
             Avatar.ALBERTO => alberto,
             Avatar.MARIO => mario,
@@ -40,19 +40,41 @@ public class AvatarAnimationController : MonoBehaviour {
         };
     }
 
+    private Animator GetAnimator(GameObject gameObject) {
+        return gameObject.GetComponent<Animator>();
+    }
+
+    private SpriteRenderer GetRenderer(GameObject gameObject) {
+        return gameObject.GetComponent<SpriteRenderer>();
+    }
+
     public void Appear(Avatar avatar) {
-        GetAnimator(avatar).SetBool("isVisible", true);
+        var gameObject = GetGameObject(avatar);
+        GetRenderer(gameObject).enabled = true;
+        GetAnimator(gameObject).SetBool("isVisible", true);
     }
 
     public void Disappear(Avatar avatar) {
-        GetAnimator(avatar).SetBool("isVisible", false); 
+        var gameObject = GetGameObject(avatar);
+        GetAnimator(gameObject).SetBool("isVisible", false); 
+        StartCoroutine(HideSprite(gameObject));
+    }
+
+    private IEnumerator HideSprite(GameObject gameObject) {
+        yield return new WaitForSeconds(4);
+        GetRenderer(gameObject).enabled = false;
     }
 
     public void StartTalking(Avatar avatar) {
-        GetAnimator(avatar).SetBool("isTalking", true);
+        var gameObject = GetGameObject(avatar);
+        var animator = GetAnimator(gameObject);
+        animator.SetBool("isTalking", true);
     }
 
     public void StopTalking(Avatar avatar) {
-        GetAnimator(avatar).SetBool("isTalking", false);
+        var gameObject = GetGameObject(avatar);
+        var animator = GetAnimator(gameObject);
+        animator.SetBool("isTalking", false);
+        Debug.Log("IsTAlking = false");
     }
 }

@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 0}
-  dialogBoxOffset: 0.3
-  diaryNotes: {fileID: 0}
+  dialogBoxOffset: 0
+  dialogBoxHeight: 1
 --- !u!82 &3716828408620805139
 AudioSource:
   m_ObjectHideFlags: 0
