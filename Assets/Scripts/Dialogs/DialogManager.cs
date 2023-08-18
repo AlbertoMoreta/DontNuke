@@ -109,7 +109,7 @@ public class DialogManager : MonoBehaviour {
         var sub = currentDialog[currentDialogLine];
         Debug.Log("DISPLAYING NEXT SUBTITLE LINE:" + sub);
         var character = GameObject.Find(sub.characterName);
-        dialogBox.transform.parent = character.transform;
+        dialogBox.transform.SetParent(character.transform);
         float xOffset = 0;
         Debug.Log("Position: " + sub.position);
         switch(sub.position) {
@@ -148,7 +148,7 @@ public class DialogManager : MonoBehaviour {
         if(_background != null) {
             // _background.transform.localRotation = Quaternion.Euler(-90, 0, 0);
         }   
-        dialogBox.transform.parent = _originalParent;
+        dialogBox.transform.SetParent(_originalParent);
         if(dialogBox != null){
             dialogBox.SetActive(false);
         }
