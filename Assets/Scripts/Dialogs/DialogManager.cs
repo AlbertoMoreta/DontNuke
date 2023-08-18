@@ -24,7 +24,7 @@ public class DialogManager : MonoBehaviour {
     private GameObject _background;
     private Dialog _currentDialog;
     private Coroutine _subtitlesCoroutine;
-    private float typeDelay = 0.05f;
+    private bool dialogPlaying = false;
 
     private List<Subtitle> currentDialog;
     private int currentDialogLine = 0;
@@ -67,10 +67,14 @@ public class DialogManager : MonoBehaviour {
         _subsTextBox.text = "";
     }
 
+    public bool IsDialogPlaying() {
+        return dialogPlaying;
+    }
     // Play dialog: DialogManager.Instance.SendMessage("StartDialog", "dialog_key");
     public void StartDialog(string dialogKey) {
+        StopSubtitles();
         if(!audioSource.isPlaying && !dialogBox.activeSelf){
-            StopSubtitles();
+            dialogPlaying = true;
             _currentDialog = _dialogCollection.dialogLines.First(dialog => dialog.key == dialogKey);
             // PlayAudio(_currentDialog.audioPath);
             _subtitlesCoroutine = StartCoroutine(DisplaySubtitles(_currentDialog.subtitles));
@@ -154,6 +158,7 @@ public class DialogManager : MonoBehaviour {
                 _currentDialog = null;
             }
             StopSubtitles();
+            dialogPlaying = false;
         }
         
     }

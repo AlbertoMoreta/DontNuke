@@ -174,12 +174,97 @@
             },
             {
                "characterName": "Alberto",
-               "text":"mas ayuda",
+               "text":"mas_ayuda",
                "position": -1,
                "duration":4
             }
         ]
+      },
+      {
+         "key":"5-mario-appears",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"...",
+               "position": 1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"6-alert-time",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Claro, si tienes el doble de ayuda también tienes la mitad de tiempo",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Hola Mario, necesitamos tu ayuda.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"¿Te acuerdas donde está el código maestro?",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"No me acuerdo del número exactamente, era bastante seguro y difícil de recordar.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Pero recuerdo haberlo puesto como Easter Egg en una de las imágenes del juego.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Así la teníamos apuntada si se nos olvidaba.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Te he dejado una copia de la imagen en el escritorio, cuando veas el código introdúcelo en la terminal.",
+               "position": 1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"7-captcha",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Es cierto, pusimos un paso de verificación extra por si se filtraba el código maestro.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Pero es sencillo.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Espera, que abro la pantalla de verificación.",
+               "position": 1,
+               "duration":4
+            }
+         ]
       }
+
       
    ]
 }

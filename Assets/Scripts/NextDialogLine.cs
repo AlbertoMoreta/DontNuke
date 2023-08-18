@@ -9,7 +9,7 @@ public class NextDialogLine : MonoBehaviour {
             dialogManager.Clear();
             dialogManager.DisplayNextSubtitle();
         } else {
-            dialogManager.StopSubtitles();
+            dialogManager.StopDialog();
         }
     }
 }

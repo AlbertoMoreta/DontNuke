@@ -26,6 +26,10 @@ public class AlertTimer : MonoBehaviour {
         countDownRunning = true;
     }
 
+    public void SetTimeLeft(float timeLeft) {
+        this.timeLeft = timeLeft;
+    }
+
     // Update is called once per frame
     void Update() {
         if (countDownRunning) {
@@ -33,7 +37,7 @@ public class AlertTimer : MonoBehaviour {
                 timeLeft -= Time.deltaTime;
                 var minutes = Mathf.FloorToInt(timeLeft / 60);
                 var seconds = Mathf.FloorToInt(timeLeft % 60);
-                alertText.text = minutes + ":" + seconds;
+                alertText.text = minutes.ToString("D2") + ":" + seconds.ToString("D2");
             } else {
                 // explode
                 timeLeft = 0;

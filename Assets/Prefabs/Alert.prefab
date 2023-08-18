@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 835588873}
   - component: {fileID: 835588876}
   - component: {fileID: 835588875}
-  - component: {fileID: 835588874}
   m_Layer: 0
   m_Name: TimeLeft
   m_TagString: Untagged
@@ -110,8 +109,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278255873
+  m_fontColor: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -173,18 +172,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 835588876}
   m_maskType: 0
---- !u!114 &835588874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 835588872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bba774f491f327b4d8937de6b50bf362, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &3658197189511034750
 GameObject:
   m_ObjectHideFlags: 0
@@ -196,6 +183,7 @@ GameObject:
   - component: {fileID: 3658197189511034749}
   - component: {fileID: 3658197189511034748}
   - component: {fileID: 3658197189511034751}
+  - component: {fileID: 1366726115}
   m_Layer: 0
   m_Name: Alert
   m_TagString: Untagged
@@ -291,3 +279,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1366726115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3658197189511034750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bba774f491f327b4d8937de6b50bf362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  alertText: {fileID: 835588875}
