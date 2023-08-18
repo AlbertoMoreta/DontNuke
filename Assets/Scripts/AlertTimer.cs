@@ -26,8 +26,8 @@ public class AlertTimer : MonoBehaviour {
         countDownRunning = true;
     }
 
-    public void SetTimeLeft(float timeLeft) {
-        this.timeLeft = timeLeft;
+    public void ReduceHalf() {
+        timeLeft /= 2;
     }
 
     // Update is called once per frame

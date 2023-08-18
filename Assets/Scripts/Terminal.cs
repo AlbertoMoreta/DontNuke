@@ -12,6 +12,7 @@ public class Terminal : MonoBehaviour {
     public TMP_InputField inputField;
     public TMP_Text content;
     public GameObject paint;
+    public GameObject albertoFlashlight;
     private bool inputCode = false;
 
     // Start is called before the first frame update
@@ -40,8 +41,9 @@ public class Terminal : MonoBehaviour {
     private void ProcessCommand(string command) {
         if(inputCode){
             switch(command.ToLower()) {
-                case "0000": StartCoroutine(CorrectCode()); break;
+                case "0000": StartCoroutine(CorrectCode()); PrintComputerInfo(); break;
                 case "1990": StartCoroutine(FormatDisk()); break;
+                case "1234": StartCoroutine(NotSexyEnough()); break;
                 default: NonExistentCode(); break;
             }
         } else {
@@ -51,7 +53,8 @@ public class Terminal : MonoBehaviour {
                 case "arreglar_juego": 
                 case "repair_game": RepairGame(); return; 
                 case "mas_ayuda":
-                case "more_help": StartCoroutine(MoreHelp()); return; 
+                case "more_help": StartCoroutine(MoreHelp()); break; 
+                case "paint": StartCoroutine(OpenPaint()); break;
             }
             
             PrintComputerInfo();
@@ -60,7 +63,7 @@ public class Terminal : MonoBehaviour {
 
     private void PrintHelp() {
         content.text += "\n";
-        content.text += "Este es un mensaje de ayuda";
+        content.text += "==== Invocando al programador ====";
         AvatarAnimationController.Instance.Appear(AvatarAnimationController.Avatar.ALBERTO);
         DialogManager.Instance.StartDialog("1-alberto-appear");
     }
@@ -72,15 +75,28 @@ public class Terminal : MonoBehaviour {
         DialogManager.Instance.StartDialog("2-input-wrong-code");
     }
 
-    private IEnumerator CorrectCode() {
-        content.text += "\n";
-        content.text += "===== CÓDIGO MAESTRO CORRECTO =====\n";
-        content.text += "Por favor, verifique que es usted el presidente.\n";
-        content.text += "Introduzca código de verificación:";
-        DialogManager.Instance.StartDialog("7-captcha");
-        yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
+    private IEnumerator OpenPaint(){
         paint.SetActive(true);
         DialogManager.Instance.StartDialog("8-paint");
+        yield return new WaitUntil(() => SavePainting.Instance.IsSaved());
+        paint.SetActive(false);
+        DialogManager.Instance.StartDialog("9-email");
+        content.text += "\nIntroduzca código de confirmación:";
+        inputCode = true;
+    }
+
+    private IEnumerator CorrectCode() {
+        content.text += "\n";
+        content.text += "===== CLAVE MAESTRA CORRECTA =====\n";
+        yield return new WaitForSeconds(3);
+        content.text += "\n";
+        content.text += "FileNotFoundException: Could not find file \"Assets/Textures/MrPresident.png\".";
+        content.text += "UnityEngine.GUI.DrawTexture (Rect position, Texture image, ScaleMode scaleMode, Boolean alphaBlend, Single imageAspect, Color color, Single borderWidth, Single borderRadius) (at <c95232c9c3b24b6592841f15a5ca524e>:0)";
+        content.text += "DancingPresident.Start () (at Assets/Scripts/DancingPresident.cs:15)\n";
+        content.text += "Completa la imagen para continuar.";
+        yield return new WaitForSeconds(2);
+        DialogManager.Instance.StartDialog("7-captcha");
+        inputCode = false;
     }
 
     private IEnumerator FormatDisk() {
@@ -108,12 +124,29 @@ public class Terminal : MonoBehaviour {
     private IEnumerator MoreHelp() {
         AvatarAnimationController.Instance.Appear(AvatarAnimationController.Avatar.MARIO);
         DialogManager.Instance.StartDialog("5-mario-appears");
+        content.text += "\n";
+        content.text += "==== Invocando al diseñador ====\n";
+        content.text += "La memoria RAM se ha reducido a la mitad.\n";
         yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
-        AlertTimer.Instance.SetTimeLeft(1800);
+        AlertTimer.Instance.ReduceHalf();
         DialogManager.Instance.StartDialog("6-alert-time");
         content.text += "\nIntroduce clave maestra:";
         SaveCodeImage();
         inputCode = true;
+    }
+
+    private IEnumerator NotSexyEnough() {
+        content.text += "\n";
+        content.text += "====== ERROR ======\n";
+        content.text += "El presidente no es lo suficientemente sexy.\n";
+        AlertTimer.Instance.ReduceHalf();
+        yield return new WaitForSeconds(2);
+        DialogManager.Instance.StartDialog("10-alberto-mad");
+        AvatarAnimationController.Instance.Disappear(AvatarAnimationController.Avatar.ALBERTO);
+        yield return new WaitForSeconds(1);
+        albertoFlashlight.SetActive(true);
+        DialogManager.Instance.StartDialog("11-find-hole");
+        yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
     }
 
     private void SaveCodeImage() {

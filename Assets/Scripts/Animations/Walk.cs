@@ -80,23 +80,20 @@ public class Walk : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col) {
         Debug.Log("On trigger enter");
-        if(foundHole && canJump) {
-            animator.SetBool("Jump", true);
-            shouldMove = false;
-        } else {
-            var light = GameObject.Find("Light");
-            light.SetActive(false);
-            var hole = GameObject.Find("Hole");
-            hole.GetComponent<SpriteMask>().enabled = true;
-            var holeCollider = hole.GetComponent<PolygonCollider2D>();
-            holeCollider.enabled = false;
-            shouldMove = false;
-            // Found hole dialog
-            shouldMove = true;
-            holeCollider.enabled = true;
-            foundHole = true;
-        }
+        StartCoroutine(FoundHole());
+    }
 
+    IEnumerator FoundHole() {
+        var light = GameObject.Find("Light");
+        light.SetActive(false);
+        var hole = GameObject.Find("Hole");
+        hole.GetComponent<SpriteMask>().enabled = true;
+        var holeCollider = hole.GetComponent<PolygonCollider2D>();
+        shouldMove = false;
+        DialogManager.Instance.StartDialog("12-found-hole"); 
+        yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
+        foundHole = true;
+        animator.SetBool("Jump", true);
     }
 
     void OnTriggerExit2D(Collider2D col) {
@@ -104,10 +101,12 @@ public class Walk : MonoBehaviour {
         canJump = true;
     }
 
-    void EnterHole(){
+    IEnumerator EnterHole(){
         var holeFront = GameObject.Find("HoleFront");
         holeFront.GetComponent<SpriteRenderer>().enabled = true;
         rigidBody.gravityScale = gravity;
+        yield return new WaitForSeconds(5);
+        DialogManager.Instance.StartDialog("13-fix-hole");
     }
 
 

@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using TMPro;
 using UnityEngine;
 
@@ -107,7 +109,6 @@ public class DialogManager : MonoBehaviour {
         var sub = currentDialog[currentDialogLine];
         Debug.Log("DISPLAYING NEXT SUBTITLE LINE:" + sub);
         var character = GameObject.Find(sub.characterName);
-        var avatar = avatarAnimationController.GetAvatar(sub.characterName);
         dialogBox.transform.parent = character.transform;
         float xOffset = 0;
         Debug.Log("Position: " + sub.position);
@@ -130,7 +131,12 @@ public class DialogManager : MonoBehaviour {
             }
         }
         dialogBox.transform.localPosition = new Vector3(xOffset, dialogBoxHeight, 0);
-        avatarAnimationController.StartTalking(avatar);
+        try {
+            var avatar = avatarAnimationController.GetAvatar(sub.characterName);
+            avatarAnimationController.StartTalking(avatar);
+        } catch(NotImplementedException e) {
+
+        }
         _subsTextBox.text = sub.text;
 
         currentDialogLine++;
