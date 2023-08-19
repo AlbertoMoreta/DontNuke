@@ -16,6 +16,7 @@ public class MessageBoxManager : MonoBehaviour {
     const uint MB_OK = 0x00000000;
     const uint MB_YESNO = 0x00000004;
     const uint MB_RETRYCANCEL = 0x00000005;
+    const uint MB_SETFOREGOUND = 0x00010000;
     const int OK = 1;
     const int CANCEL = 2;
     const int ABORT = 3;
@@ -29,6 +30,7 @@ public class MessageBoxManager : MonoBehaviour {
     public enum MESSAGE_TYPE {
         DEFAULT,
         ERROR,
+        FOREGROUND
     }
 
 
@@ -41,6 +43,10 @@ public class MessageBoxManager : MonoBehaviour {
         switch(type) {
             case MESSAGE_TYPE.ERROR: {
                 messageType = MB_ICONERROR;
+                break;
+            }
+            case MESSAGE_TYPE.FOREGROUND: {
+                messageType = MB_SETFOREGOUND;
                 break;
             }
         }

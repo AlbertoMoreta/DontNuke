@@ -23,23 +23,26 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 173312258048
-    m_Localized: fuck
+    m_Localized: We've told you not to press the button. It's better not to touch
+      anything.
     m_Metadata:
       m_Items: []
   - m_Id: 79716274352128
-    m_Localized: test
+    m_Localized: Massive corruption!
     m_Metadata:
       m_Items: []
   - m_Id: 79868405952512
-    m_Localized: test
+    m_Localized: We've told you not to touch anything. If you press 'Accept,' we
+      won't take responsibility for whatever might happen.
     m_Metadata:
       m_Items: []
   - m_Id: 79948827537408
-    m_Localized: test
+    m_Localized: Well, you've broken the entire game and possibly the PC now.
     m_Metadata:
       m_Items: []
   - m_Id: 80022890557440
-    m_Localized: test
+    m_Localized: Alright, I think we can fix this. If you want to open the terminal,
+      press 'Accept'.
     m_Metadata:
       m_Items: []
   - m_Id: 307604500197376
@@ -114,6 +117,10 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 835339077234688
     m_Localized: The disk couldn't be formatted
+    m_Metadata:
+      m_Items: []
+  - m_Id: 604650281054208
+    m_Localized: Enter 'help' if you experiment any problem with the game
     m_Metadata:
       m_Items: []
   references:

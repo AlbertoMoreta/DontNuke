@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.UI;
+using static MessageBoxManager;
 
 public class FinalSceneManager : MonoBehaviour {
 
@@ -59,9 +60,9 @@ public class FinalSceneManager : MonoBehaviour {
 
         brokenScreenRenderer.enabled = true;
         brokenScreenAudioSource.Play();
-        yield return new WaitForSeconds(1f);
         
-        MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), 0x00000000);
+        uint error =  0x00000000;
+        MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), error, MESSAGE_TYPE.FOREGROUND);
         Application.Quit();
     }
 }

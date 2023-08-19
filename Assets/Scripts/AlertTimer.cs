@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 
 public class AlertTimer : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class AlertTimer : MonoBehaviour {
     private bool countDownRunning = false;
     public TMP_Text alertText;
     AudioSource audioSource;
+    public GameObject brokenScreen;
 
     public static AlertTimer Instance {
         get; private set;
@@ -46,9 +48,14 @@ public class AlertTimer : MonoBehaviour {
                 var seconds = Mathf.FloorToInt(timeLeft % 60);
                 alertText.text = minutes.ToString("D2") + ":" + seconds.ToString("D2");
             } else {
-                // explode
-                timeLeft = 0;
                 countDownRunning = false;
+                timeLeft = 1;
+                var brokenScreenRenderer = brokenScreen.GetComponent<SpriteRenderer>();
+                var brokenScreenAudioSource = brokenScreen.GetComponent<AudioSource>();
+                brokenScreenRenderer.enabled = true;
+                brokenScreenAudioSource.Play();
+                MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), 0x00000000);
+                Application.Quit();
             }
         }
         
