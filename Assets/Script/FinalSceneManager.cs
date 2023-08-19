@@ -60,9 +60,12 @@ public class FinalSceneManager : MonoBehaviour {
 
         brokenScreenRenderer.enabled = true;
         brokenScreenAudioSource.Play();
-        
+    
+    }
+
+    void Finish() {
         uint error =  0x00000000;
-        MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), error, MESSAGE_TYPE.FOREGROUND);
+        MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), error, MESSAGE_TYPE.ERROR);
         Application.Quit();
     }
 }

@@ -25,7 +25,7 @@ MonoBehaviour:
   m_Metadata:
     m_Items: []
   m_ProjectLocaleIdentifier:
-    m_Code: es
+    m_Code: en
   m_InitializeSynchronously: 0
   references:
     version: 2
@@ -38,7 +38,7 @@ MonoBehaviour:
       type: {class: SpecificLocaleSelector, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
       data:
         m_LocaleId:
-          m_Code: es
+          m_Code: en
     - rid: 8478589627265449987
       type: {class: LocalesProvider, ns: UnityEngine.Localization.Settings, asm: Unity.Localization}
     - rid: 8478589627265449988
