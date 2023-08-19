@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class FinalSceneManager : MonoBehaviour {
@@ -11,7 +12,7 @@ public class FinalSceneManager : MonoBehaviour {
     public Image cursor;
     private Sprite crosshair1;
     private Sprite crosshair2;
-    public SpriteRenderer brokenScreen;
+    public GameObject brokenScreen;
 
     void Start() {
         crosshair1 = Resources.Load<Sprite>("Cursor_Normal");
@@ -38,6 +39,8 @@ public class FinalSceneManager : MonoBehaviour {
         var ramboAnimator = rambo.GetComponent<Animator>();
         var bombaRenderer = bomba.GetComponent<SpriteRenderer>();
         var bombaAnimator = bomba.GetComponent<Animator>();
+        var brokenScreenRenderer = brokenScreen.GetComponent<SpriteRenderer>();
+        var brokenScreenAudioSource = brokenScreen.GetComponent<AudioSource>();
         var resplandorBombaRender = resplandorBomba.GetComponent<SpriteRenderer>();
 
         presiAnimator.enabled = true;
@@ -54,9 +57,11 @@ public class FinalSceneManager : MonoBehaviour {
 
         yield return new WaitForSeconds(3f);
 
-        brokenScreen.enabled = true;
+        brokenScreenRenderer.enabled = true;
+        brokenScreenAudioSource.Play();
         yield return new WaitForSeconds(1f);
-        MessageBoxManager.DisplayMessage("ERROR", "El disco duro no se ha podido formatear", 0x00000000);
+        
+        MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), 0x00000000);
         Application.Quit();
     }
 }

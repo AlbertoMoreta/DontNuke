@@ -107,6 +107,10 @@ MonoBehaviour:
     m_Key: sexy_president
     m_Metadata:
       m_Items: []
+  - m_Id: 835339077234688
+    m_Key: disk_not_formated
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

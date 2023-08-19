@@ -112,6 +112,10 @@ MonoBehaviour:
     m_Localized: The president is not sexy enough.
     m_Metadata:
       m_Items: []
+  - m_Id: 835339077234688
+    m_Localized: The disk couldn't be formatted
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
