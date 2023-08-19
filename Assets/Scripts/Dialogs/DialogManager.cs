@@ -1,10 +1,13 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
 public enum DIALOG_BOX_POSITIONS {
     LEFT = -1,
@@ -53,8 +56,12 @@ public class DialogManager : MonoBehaviour {
         dialogBox.SetActive(false);
 
         // Load dialogs from Resources/dialogs.json
-        var dialogsFile = Resources.Load("dialogs") as TextAsset;
-        Debug.Log("dialogsFile: " + dialogsFile);
+        var locale = LocalizationSettings.SelectedLocale.Identifier.Code;
+        TextAsset dialogsFile = Resources.Load("dialogs_es") as TextAsset;
+        switch(locale) {
+            case "es": dialogsFile = Resources.Load("dialogs_es") as TextAsset; break;
+            case "en": dialogsFile = Resources.Load("dialogs_en") as TextAsset; break;
+        }
         if (dialogsFile != null) {
             _dialogCollection = JsonUtility.FromJson<DialogCollection>(dialogsFile.text);
         } else {

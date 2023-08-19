@@ -30,8 +30,8 @@ public class SavePainting : MonoBehaviour {
     public void Save() {
         var painting = Resources.Load<Sprite>("Paint");
         Debug.Log("Painting: " + painting);
-        String directoryPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + Path.DirectorySeparatorChar + "test";
-        String filePath = directoryPath + Path.DirectorySeparatorChar + "verification_image.jpg";
+        String directoryPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+        String filePath = directoryPath + Path.DirectorySeparatorChar + "missing_image.jpg";
         // Create directory on the desktop
         Directory.CreateDirectory(directoryPath);
         byte[] spriteData = painting.texture.EncodeToJPG();

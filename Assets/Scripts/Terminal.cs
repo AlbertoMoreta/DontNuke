@@ -5,6 +5,7 @@ using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class Terminal : MonoBehaviour {
@@ -63,14 +64,14 @@ public class Terminal : MonoBehaviour {
 
     private void PrintHelp() {
         content.text += "\n";
-        content.text += "==== Invocando al programador ====";
+        content.text += new LocalizedString("UI", "invoke_programmer").GetLocalizedString();
         AvatarAnimationController.Instance.Appear(AvatarAnimationController.Avatar.ALBERTO);
         DialogManager.Instance.StartDialog("1-alberto-appear");
     }
 
     private void RepairGame() {
         content.text += "\n";
-        content.text += "Por favor, introduzca el código de reparación:";
+        content.text += new LocalizedString("UI", "repair_code").GetLocalizedString();
         inputCode = true;
         DialogManager.Instance.StartDialog("2-input-wrong-code");
     }
@@ -81,19 +82,21 @@ public class Terminal : MonoBehaviour {
         yield return new WaitUntil(() => SavePainting.Instance.IsSaved());
         paint.SetActive(false);
         DialogManager.Instance.StartDialog("9-email");
-        content.text += "\nIntroduzca código de confirmación:";
+        content.text += "\n";
+        content.text += new LocalizedString("UI", "confirmation_code").GetLocalizedString();
         inputCode = true;
     }
 
     private IEnumerator CorrectCode() {
         content.text += "\n";
-        content.text += "===== CLAVE MAESTRA CORRECTA =====\n";
+        content.text += new LocalizedString("UI", "correct_master_code").GetLocalizedString();
+        content.text += "\n";
         yield return new WaitForSeconds(3);
         content.text += "\n";
         content.text += "FileNotFoundException: Could not find file \"Assets/Textures/MrPresident.png\".";
         content.text += "UnityEngine.GUI.DrawTexture (Rect position, Texture image, ScaleMode scaleMode, Boolean alphaBlend, Single imageAspect, Color color, Single borderWidth, Single borderRadius) (at <c95232c9c3b24b6592841f15a5ca524e>:0)";
         content.text += "DancingPresident.Start () (at Assets/Scripts/DancingPresident.cs:15)\n";
-        content.text += "Completa la imagen para continuar.";
+        content.text += new LocalizedString("UI", "complete_image").GetLocalizedString();
         yield return new WaitForSeconds(2);
         DialogManager.Instance.StartDialog("7-captcha");
         inputCode = false;
@@ -101,8 +104,9 @@ public class Terminal : MonoBehaviour {
 
     private IEnumerator FormatDisk() {
         content.text += "\n";
-        content.text += "===== INICIANDO FORMATEO DE DISCO =====\n";
-        content.text += "Por favor, no toque nada hasta que el proceso termine.";
+        content.text += new LocalizedString("UI", "format_disk").GetLocalizedString();
+        content.text += "\n";
+        content.text += new LocalizedString("UI", "dont_touch_anything").GetLocalizedString();
         inputCode = false;
         AlertTimer.Instance.Display();
         DialogManager.Instance.StartDialog("3-format-disk");
@@ -117,20 +121,24 @@ public class Terminal : MonoBehaviour {
 
     private void NonExistentCode() {
         content.text += "\n";
-        content.text += "¡CÓDIGO INCORRECTO!\n";
-        content.text += "Por favor, pruebe de nuevo:";
+        content.text += new LocalizedString("UI", "wrong_code").GetLocalizedString();
+        content.text += "\n";
+        content.text += new LocalizedString("UI", "try_again").GetLocalizedString();
     }
 
     private IEnumerator MoreHelp() {
         AvatarAnimationController.Instance.Appear(AvatarAnimationController.Avatar.MARIO);
         DialogManager.Instance.StartDialog("5-mario-appears");
         content.text += "\n";
-        content.text += "==== Invocando al diseñador ====\n";
-        content.text += "La memoria RAM se ha reducido a la mitad.\n";
+        content.text += new LocalizedString("UI", "invoke_artist").GetLocalizedString();
+        content.text += "\n";
+        content.text += new LocalizedString("UI", "ram_reduced").GetLocalizedString();
+        content.text += "\n";
         yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());
         AlertTimer.Instance.ReduceHalf();
         DialogManager.Instance.StartDialog("6-alert-time");
-        content.text += "\nIntroduce clave maestra:";
+        content.text += "\n";
+        content.text += new LocalizedString("UI", "master_code").GetLocalizedString();
         SaveCodeImage();
         inputCode = true;
     }
@@ -138,7 +146,8 @@ public class Terminal : MonoBehaviour {
     private IEnumerator NotSexyEnough() {
         content.text += "\n";
         content.text += "====== ERROR ======\n";
-        content.text += "El presidente no es lo suficientemente sexy.\n";
+        content.text += new LocalizedString("UI", "sexy_president").GetLocalizedString();
+        content.text += "\n";
         AlertTimer.Instance.ReduceHalf();
         yield return new WaitForSeconds(2);
         DialogManager.Instance.StartDialog("10-alberto-mad");
@@ -152,9 +161,7 @@ public class Terminal : MonoBehaviour {
     private void SaveCodeImage() {
         var texture = Resources.Load<Texture2D>("DontNuke_Code");
         Texture2D decopmpresseTex = DeCompress(texture);
-        Debug.Log("painting: " + decopmpresseTex);
         String filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + Path.DirectorySeparatorChar + "DontNuke_Code.png";
-        Debug.Log("FILEPATH: " + filePath);
         byte[] spriteData = decopmpresseTex.EncodeToPNG();
         File.WriteAllBytes(filePath, spriteData);
         Debug.Log("Saved");

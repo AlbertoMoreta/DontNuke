@@ -55,6 +55,58 @@ MonoBehaviour:
     m_Key: press_play
     m_Metadata:
       m_Items: []
+  - m_Id: 831917913485312
+    m_Key: invoke_programmer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832017905692672
+    m_Key: repair_code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832266720194560
+    m_Key: confirmation_code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832690164543488
+    m_Key: correct_master_code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832892279664640
+    m_Key: complete_image
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833079052021760
+    m_Key: format_disk
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833346812194816
+    m_Key: dont_touch_anything
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833564790173696
+    m_Key: wrong_code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833606808711168
+    m_Key: try_again
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833837717729280
+    m_Key: invoke_artist
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833974749835264
+    m_Key: ram_reduced
+    m_Metadata:
+      m_Items: []
+  - m_Id: 834101652697088
+    m_Key: master_code
+    m_Metadata:
+      m_Items: []
+  - m_Id: 834382390046720
+    m_Key: sexy_president
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

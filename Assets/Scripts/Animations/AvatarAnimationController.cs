@@ -48,16 +48,22 @@ public class AvatarAnimationController : MonoBehaviour {
         return gameObject.GetComponent<SpriteRenderer>();
     }
 
+    private AudioSource GetAudioSource(GameObject gameObject) {
+        return gameObject.GetComponent<AudioSource>();
+    }
+
     public void Appear(Avatar avatar) {
         var gameObject = GetGameObject(avatar);
         GetRenderer(gameObject).enabled = true;
         GetAnimator(gameObject).SetBool("isVisible", true);
+        GetAudioSource(gameObject).Play();
     }
 
     public void Disappear(Avatar avatar) {
         var gameObject = GetGameObject(avatar);
         GetAnimator(gameObject).SetBool("isVisible", false); 
         StartCoroutine(HideSprite(gameObject));
+        GetAudioSource(gameObject).Play();
     }
 
     private IEnumerator HideSprite(GameObject gameObject) {

@@ -1,0 +1,450 @@
+{
+   "dialogLines":[
+      {
+         "key":"1-alberto-appear",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Hi, I'm the programmer.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"As you have ignored all the instructions that we gave you, I'm here to help you fix the problem.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"It's easy, you just have to input this command in the terminal.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"repair_game",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"2-input-wrong-code",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Right, you need the fix code.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"But well, it's easy.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"The code is the year when The Secret of Monkey Island was released.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"1990",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"3-format-disk",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Fuck.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"That was the code that starts the format disk countdown in case there is a problem with the game.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"By doing this, we can erase any proof of error and prevent receiving negative reviews, or to avoid being sued.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"So, that's it, you just have to wait less than an hour and all your problems will go away.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Anyway, don't forget to leave a positive review to the game. After all it was your foult for pressing that button.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"It was a pleasure.",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"4-still-there",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"...",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Are you still there?",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Ah, so you don't want your disk to be erased.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Right, I'm sure you have a lot of really important things you don't want to get lost.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Ok ok, I think I know how to fix it.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"You just have to input the master code.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"...",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"But I don't remember what it was.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"This is what happens for not writting things down.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"We are going to need more help to fix this.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"To get more help, input this in the terminal.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"more_help",
+               "position": -1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"5-mario-appears",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"...",
+               "position": 1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"6-alert-time",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"The countdown has been halved. That's because there are two assistants now.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"What do you want? I was taking a nap.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Do you remember where is the master key?",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Not quite, it was a pretty secure and hard-to-guess code.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"But I remember including it as an Easter Egg in one of the games' images",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"That way we could check it out in case we forgot.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"I've left a copy of the image on your desktop. When you see the code, enter it into the terminal.",
+               "position": 1,
+               "duration":4
+            }
+        ]
+      },
+      {
+         "key":"7-captcha",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Okey, the thing is that there's an incomplete image within the game, and it won't work until it's loaded.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"But I was about to take a nap again.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Whoever had the brilliant idea of pressing the wrong button should fix this.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"But don't worry, it's just an image.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"To edit it, enter the command 'paint' in the terminal.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"8-paint",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Perfect, the only thing you have to do now is complete the president's face.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"And when you finish, press the 'save' button.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"9-email",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Amazing.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"I just saved the image on your desktop.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Now the only thing left to do is to send the image to our support team's email.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"And you will receive a response including the confirmation code, which you'll need to enter into the terminal.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"That's a lot of secret codes.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"The email address you have to send the image is dontnukegame@gmail.com",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"Remember: dontnukegame@gmail.com",
+               "position": -1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"10-alberto-mad",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Alberto",
+               "text":"Okay, this has gone too far.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Alberto",
+               "text":"I've had enough.",
+               "position": -1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"11-find-hole",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "AlbertoWalk",
+               "text":"I'm going to find the issue myself.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "AlbertoWalk",
+               "text":"Help me find the glitch.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "AlbertoWalk",
+               "text":"Guide me across the desktop using the 'AWSD' keys until I find something unusual.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"But come back in one piece.",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"I can't stay alone. Who has ever seen software with just one assistant? It's ridiculous!",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"12-found-hole",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "AlbertoWalk",
+               "text":"Damn, here's the error.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"What a massive gap!",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "AlbertoWalk",
+               "text":"Give me luck.",
+               "position": -1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"13-fix-hole",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"How are you doing?",
+               "position": 1,
+               "duration":4
+            },
+            {
+               "characterName": "InsideHole",
+               "text":"I think it's fixed.",
+               "position": -1,
+               "duration":4
+            },
+            {
+               "characterName": "Mario",
+               "text":"Great! Let me turn it off and on again.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      }
+
+      
+   ]
+}

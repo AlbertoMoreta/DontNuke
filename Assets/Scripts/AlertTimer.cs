@@ -8,6 +8,7 @@ public class AlertTimer : MonoBehaviour {
     private float timeLeft = 3600;
     private bool countDownRunning = false;
     public TMP_Text alertText;
+    AudioSource audioSource;
 
     public static AlertTimer Instance {
         get; private set;
@@ -21,13 +22,19 @@ public class AlertTimer : MonoBehaviour {
         Instance = this;
     }
 
+    void Start() {
+        audioSource = GetComponent<AudioSource>();
+    }
+
     public void Display() {
         GetComponent<SpriteRenderer>().enabled = true;
         countDownRunning = true;
+        audioSource.Play();
     }
 
     public void ReduceHalf() {
         timeLeft /= 2;
+        audioSource.Play();
     }
 
     // Update is called once per frame

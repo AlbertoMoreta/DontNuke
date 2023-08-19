@@ -63,6 +63,58 @@ MonoBehaviour:
       libre de fallos, por favor, PULSA PLAY"
     m_Metadata:
       m_Items: []
+  - m_Id: 831917913485312
+    m_Localized: ==== Invocando al programador ====
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832017905692672
+    m_Localized: "Por favor, introduzca el c\xF3digo de reparaci\xF3n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832266720194560
+    m_Localized: "Introduzca c\xF3digo de confirmaci\xF3n:"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832690164543488
+    m_Localized: ===== CLAVE MAESTRA CORRECTA =====
+    m_Metadata:
+      m_Items: []
+  - m_Id: 832892279664640
+    m_Localized: Completa la imagen para continuar.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833079052021760
+    m_Localized: ===== INICIANDO FORMATEO DE DISCO =====
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833346812194816
+    m_Localized: Por favor, no toque nada hasta que el proceso termine.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833564790173696
+    m_Localized: "\xA1C\xD3DIGO INCORRECTO!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833606808711168
+    m_Localized: 'Por favor, pruebe de nuevo:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833837717729280
+    m_Localized: "==== Invocando al dise\xF1ador ===="
+    m_Metadata:
+      m_Items: []
+  - m_Id: 833974749835264
+    m_Localized: La memoria RAM se ha reducido a la mitad.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 834101652697088
+    m_Localized: 'Introduce clave maestra:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 834382390046720
+    m_Localized: El presidente no es lo suficientemente sexy.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
