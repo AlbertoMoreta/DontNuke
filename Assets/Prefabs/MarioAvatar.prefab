@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 631341313928036150}
   - component: {fileID: 2253625055720476824}
   - component: {fileID: 682846565}
+  - component: {fileID: 682846571}
+  - component: {fileID: 682846570}
   m_Layer: 0
   m_Name: MarioAvatar
   m_TagString: Untagged
@@ -81,7 +83,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -215,3 +217,90 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &682846571
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631341313928036137}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &682846570
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631341313928036137}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.498523, y: 0.5627177}
+      - {x: 0.4384725, y: 0.5598338}
+      - {x: 0.4383843, y: 0.6246555}
+      - {x: 0.31166244, y: 0.6260325}
+      - {x: 0.31245303, y: 0.68636715}
+      - {x: 0.25003076, y: 0.68725884}
+      - {x: 0.2512977, y: 0.74994326}
+      - {x: -0.24391222, y: 0.7497817}
+      - {x: -0.2443006, y: 0.68394494}
+      - {x: -0.3708911, y: 0.688126}
+      - {x: -0.3745644, y: 0.6222154}
+      - {x: -0.43445683, y: 0.62284154}
+      - {x: -0.43628192, y: 0.49810877}
+      - {x: -0.49841642, y: 0.49793163}
+      - {x: -0.4988246, y: -0.062622786}
+      - {x: -0.43736672, y: -0.063305914}
+      - {x: -0.43598175, y: -0.37839645}
+      - {x: -0.37581134, y: -0.37638283}
+      - {x: -0.375, y: -0.5608485}
+      - {x: -0.3151791, y: -0.56184846}
+      - {x: -0.31275368, y: -0.6235885}
+      - {x: -0.2492466, y: -0.6244754}
+      - {x: -0.2490952, y: -0.689032}
+      - {x: -0.1809783, y: -0.68738}
+      - {x: -0.18659711, y: -0.690085}
+      - {x: -0.1862688, y: -0.74997765}
+      - {x: 0.18790793, y: -0.75055164}
+      - {x: 0.19103074, y: -0.6870573}
+      - {x: 0.24913216, y: -0.68685895}
+      - {x: 0.25062776, y: -0.6239943}
+      - {x: 0.30956578, y: -0.62580305}
+      - {x: 0.31025767, y: -0.49849802}
+      - {x: 0.37654328, y: -0.501344}
+      - {x: 0.3748598, y: -0.31123817}
+      - {x: 0.4381442, y: -0.31255025}
+      - {x: 0.43755198, y: -0.123782575}
+      - {x: 0.4996345, y: -0.12610757}
+      - {x: 0.49849963, y: -0.06125933}
+      - {x: 0.56320786, y: -0.062473953}
+      - {x: 0.55940723, y: 0.43856806}
+      - {x: 0.4990878, y: 0.43745556}

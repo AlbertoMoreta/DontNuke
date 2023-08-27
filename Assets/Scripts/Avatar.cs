@@ -21,5 +21,11 @@ public class Avatar : MonoBehaviour
         audioSource.Play();
     }
 
+    void OnMouseDown(){
+        Debug.Log("repeat line button clicked");
+        DialogManager.Instance.DisplayCurrentSubtitle();
+        
+    }
+
 
 }

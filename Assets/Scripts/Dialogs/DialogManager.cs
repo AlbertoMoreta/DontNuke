@@ -91,7 +91,7 @@ public class DialogManager : MonoBehaviour {
     }
 
     public bool HasNextSubtitle() {
-        return currentDialogLine <= (currentDialog.Count - 1);
+        return (currentDialogLine + 1) <= (currentDialog.Count - 1);
     }
 
     private void PlayAudio(string audioName) {
@@ -102,9 +102,7 @@ public class DialogManager : MonoBehaviour {
 
     private IEnumerator DisplaySubtitles(List<Subtitle> subtitles) {
         currentDialog = subtitles;
-        currentDialogLine = 0;
-
-        dialogBox.SetActive(true);
+        currentDialogLine = -1;
 
         DisplayNextSubtitle();
 
@@ -113,6 +111,12 @@ public class DialogManager : MonoBehaviour {
     }
 
     public void DisplayNextSubtitle() {
+        currentDialogLine++;
+        DisplayCurrentSubtitle();        
+    }
+
+    public void DisplayCurrentSubtitle() {
+        dialogBox.SetActive(true);
         var sub = currentDialog[currentDialogLine];
         Debug.Log("DISPLAYING NEXT SUBTITLE LINE:" + sub);
         var character = GameObject.Find(sub.characterName);
@@ -145,9 +149,8 @@ public class DialogManager : MonoBehaviour {
 
         }
         _subsTextBox.text = sub.text;
-
-        currentDialogLine++;
     }
+
 
     public void StopSubtitles(){
         Debug.Log("Stopping subtitles");

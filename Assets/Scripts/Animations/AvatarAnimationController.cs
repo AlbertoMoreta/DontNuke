@@ -52,16 +52,22 @@ public class AvatarAnimationController : MonoBehaviour {
         return gameObject.GetComponent<AudioSource>();
     }
 
+    private PolygonCollider2D GetCollider(GameObject gameObject){
+        return gameObject.GetComponent<PolygonCollider2D>();
+    }
+
     public void Appear(Avatar avatar) {
         var gameObject = GetGameObject(avatar);
         GetRenderer(gameObject).enabled = true;
+        GetCollider(gameObject).enabled = true;
         GetAnimator(gameObject).SetBool("isVisible", true);
         GetAudioSource(gameObject).Play();
     }
 
     public void Disappear(Avatar avatar) {
         var gameObject = GetGameObject(avatar);
-        GetAnimator(gameObject).SetBool("isVisible", false); 
+        GetAnimator(gameObject).SetBool("isVisible", false);
+        GetCollider(gameObject).enabled = false; 
         StartCoroutine(HideSprite(gameObject));
         GetAudioSource(gameObject).Play();
     }

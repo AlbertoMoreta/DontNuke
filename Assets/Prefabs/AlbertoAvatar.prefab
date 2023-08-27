@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1702207806260155827}
   - component: {fileID: 4224200043750952434}
   - component: {fileID: 736425879}
+  - component: {fileID: 736425884}
+  - component: {fileID: 736425885}
   m_Layer: 0
   m_Name: AlbertoAvatar
   m_TagString: Untagged
@@ -81,7 +83,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -215,3 +217,97 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!50 &736425884
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702207806260155788}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &736425885
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1702207806260155788}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.49865103, y: 0.8129206}
+      - {x: 0.31269407, y: 0.8135071}
+      - {x: 0.3139634, y: 0.87499017}
+      - {x: 0.18732548, y: 0.87438107}
+      - {x: 0.18723726, y: 0.81077147}
+      - {x: 0.12487602, y: 0.8112145}
+      - {x: 0.124219894, y: 0.7526492}
+      - {x: -0.12607145, y: 0.7499038}
+      - {x: -0.12856531, y: 0.6894427}
+      - {x: -0.31273985, y: 0.68572533}
+      - {x: -0.31320906, y: 0.5633709}
+      - {x: -0.37218904, y: 0.5610581}
+      - {x: -0.3783908, y: 0.50253695}
+      - {x: -0.43636227, y: 0.49607173}
+      - {x: -0.4375167, y: 0.18840578}
+      - {x: -0.49847412, y: 0.1870611}
+      - {x: -0.50050163, y: -0.06320441}
+      - {x: -0.43762112, y: -0.06265205}
+      - {x: -0.43719053, y: -0.12554288}
+      - {x: -0.37549543, y: -0.12693161}
+      - {x: -0.37324858, y: -0.31154877}
+      - {x: -0.31399632, y: -0.31306922}
+      - {x: -0.31228304, y: -0.43821996}
+      - {x: -0.24831343, y: -0.43891543}
+      - {x: -0.24869108, y: -0.49691796}
+      - {x: -0.18772793, y: -0.5004315}
+      - {x: -0.18754005, y: -0.563219}
+      - {x: -0.12511921, y: -0.5630068}
+      - {x: -0.12475014, y: -0.62564427}
+      - {x: -0.00013446808, y: -0.6245119}
+      - {x: 0.00054740906, y: -0.68783695}
+      - {x: 0.24851131, y: -0.6885709}
+      - {x: 0.25152445, y: -0.62575233}
+      - {x: 0.31165123, y: -0.62610924}
+      - {x: 0.31235075, y: -0.56152904}
+      - {x: 0.37597322, y: -0.5636221}
+      - {x: 0.3758192, y: -0.37424308}
+      - {x: 0.43771172, y: -0.37202668}
+      - {x: 0.43685675, y: -0.18853092}
+      - {x: 0.4994073, y: -0.18809742}
+      - {x: 0.4998393, y: -0.062474787}
+      - {x: 0.56164503, y: -0.062173188}
+      - {x: 0.56275177, y: 0.18932384}
+      - {x: 0.5015836, y: 0.18818888}
+      - {x: 0.50096226, y: 0.4387448}
+      - {x: 0.5617633, y: 0.43747044}
+      - {x: 0.56145096, y: 0.68711036}
+      - {x: 0.50144863, y: 0.68748033}
