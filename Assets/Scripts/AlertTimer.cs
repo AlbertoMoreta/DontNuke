@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization;
+using static MessageBoxManager;
 
 public class AlertTimer : MonoBehaviour {
 
@@ -49,15 +50,22 @@ public class AlertTimer : MonoBehaviour {
                 alertText.text = minutes.ToString("D2") + ":" + seconds.ToString("D2");
             } else {
                 countDownRunning = false;
-                timeLeft = 1;
+                alertText.text = "00:00";
                 var brokenScreenRenderer = brokenScreen.GetComponent<SpriteRenderer>();
                 var brokenScreenAudioSource = brokenScreen.GetComponent<AudioSource>();
                 brokenScreenRenderer.enabled = true;
                 brokenScreenAudioSource.Play();
-                MessageBoxManager.DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), 0x00000000);
-                Application.Quit();
+                StartCoroutine(BrokenScreen());
             }
         }
         
+    }
+
+    IEnumerator BrokenScreen() {
+        yield return new WaitForSeconds(1f);
+        uint error =  0x00000000;
+        DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), error, MESSAGE_TYPE.ERROR);
+        Application.Quit();
+
     }
 }
