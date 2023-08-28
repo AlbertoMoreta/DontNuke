@@ -11,7 +11,7 @@
 El juego está disponible para descargar de manera gratuita en [itch.io](https://mariomisas.itch.io/dont-nuke)
 
 ## Créditos
-<a href="https://moreta.itch.io/"><img alt="Programación: Alberto Moreta" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2tqNjcybjAyYnA2eTczMHF6eWNtcDl2cjd6YnV1a2dqcHJwemJqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/EhFME8k47Q2mrUbfa0/giphy.gif" /></a> <a href="http://www.mariomisas.es/"><img alt="Arte: Mario Misas" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRpMTB0Nmc2dDBuMTAzaDRuZHNtcnZ1eWxkbTVyM2s4YTh1a2VtMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Ber1xlgMvW9GIYSCg4/giphy.gif" /></a>
+<a width="50%" href="https://moreta.itch.io/"><img alt="Programación: Alberto Moreta" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2tqNjcybjAyYnA2eTczMHF6eWNtcDl2cjd6YnV1a2dqcHJwemJqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/EhFME8k47Q2mrUbfa0/giphy.gif" /></a> <a width="50%" href="http://www.mariomisas.es/"><img alt="Arte: Mario Misas" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRpMTB0Nmc2dDBuMTAzaDRuZHNtcnZ1eWxkbTVyM2s4YTh1a2VtMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Ber1xlgMvW9GIYSCg4/giphy.gif" /></a>
 
 ## Licencia
 
