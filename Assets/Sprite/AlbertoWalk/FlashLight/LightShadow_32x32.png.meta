@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a2b82c1d766d39745bbe15ad650dc195
+guid: 0958d77e80c32d44e87a5c5efaaf8ac7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,7 +118,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Light_32x32_0
+      name: LightShadow_32x32_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,20 +137,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3166166808cc3c43b93baf35c309c97
-      internalID: 1671783396
+      spriteID: 2a274d5c5294b334fb2fdf5771576254
+      internalID: -392706645
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_1
+      name: LightShadow_32x32_1
       rect:
         serializedVersion: 2
         x: 32
@@ -158,20 +158,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6bbd612efb6b85499a274856e1ed07d
-      internalID: 1299899118
+      spriteID: 65a06ce6ca41dfd48b1260bf25d8fef3
+      internalID: -446236904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_2
+      name: LightShadow_32x32_2
       rect:
         serializedVersion: 2
         x: 64
@@ -179,20 +179,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13e22399f5decbf478a533928b89658c
-      internalID: -164265871
+      spriteID: 6dca8123fea80f24685ebd3575df1a3d
+      internalID: 282978024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_3
+      name: LightShadow_32x32_3
       rect:
         serializedVersion: 2
         x: 96
@@ -200,20 +200,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 941c3908d4dafeb4c8aed6ffe255874d
-      internalID: -1920558958
+      spriteID: 6009728aab9bbbb4783b6fb51d673fe7
+      internalID: 1428440022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_4
+      name: LightShadow_32x32_4
       rect:
         serializedVersion: 2
         x: 0
@@ -221,20 +221,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9ff26e1ff7c2e745802ec6451378ecd
-      internalID: -1613546825
+      spriteID: 4e7158e7c438a164abe3fe6eaf6cc3e4
+      internalID: 1996591008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_5
+      name: LightShadow_32x32_5
       rect:
         serializedVersion: 2
         x: 32
@@ -242,20 +242,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bb5082cc3086824baf845ddf4e1e78a
-      internalID: -1981190389
+      spriteID: 1710d2f7b66e5e04d8107314aa6a75db
+      internalID: -1725217891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_6
+      name: LightShadow_32x32_6
       rect:
         serializedVersion: 2
         x: 64
@@ -263,20 +263,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 175c4334b3f737c4894efbce176171e9
-      internalID: -1230284276
+      spriteID: 38a6408eb651e244d85adf831dc071d1
+      internalID: -1041479348
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_7
+      name: LightShadow_32x32_7
       rect:
         serializedVersion: 2
         x: 96
@@ -284,20 +284,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e70105a05c5c70d4abb714793d54c423
-      internalID: 1728535356
+      spriteID: 692e246cd50fa3a41b5ea8055f06c389
+      internalID: 847201323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_8
+      name: LightShadow_32x32_8
       rect:
         serializedVersion: 2
         x: 0
@@ -305,20 +305,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf51a5924a4d92c48a00a89040ff370a
-      internalID: 940953936
+      spriteID: 56989452600fab24fa76e82c59c01978
+      internalID: 2141939409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_9
+      name: LightShadow_32x32_9
       rect:
         serializedVersion: 2
         x: 32
@@ -326,20 +326,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10fde6f4a433ebf4f86b3909b2a1c947
-      internalID: -1690141230
+      spriteID: 3be1616a881f01742b8da8a62098df15
+      internalID: 899887791
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_10
+      name: LightShadow_32x32_10
       rect:
         serializedVersion: 2
         x: 64
@@ -347,20 +347,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d342b0455a5b18b4d9d7b24fa596e65b
-      internalID: 1631447024
+      spriteID: eda86caa0712e3a4197dd27ce3d980aa
+      internalID: -109030179
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_11
+      name: LightShadow_32x32_11
       rect:
         serializedVersion: 2
         x: 96
@@ -368,20 +368,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ccaad6120781bea4da778595e3f4b543
-      internalID: -91897522
+      spriteID: 8198d1598ccf17a4391caefbc598de53
+      internalID: -1022752101
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_12
+      name: LightShadow_32x32_12
       rect:
         serializedVersion: 2
         x: 0
@@ -389,20 +389,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c7c1ffcbe2e9d469c61ff3fa82da42
-      internalID: -2035741764
+      spriteID: 5e6b9b2108f80f14f98f1854648f2772
+      internalID: 1983111372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_13
+      name: LightShadow_32x32_13
       rect:
         serializedVersion: 2
         x: 32
@@ -410,20 +410,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90555e364a60de948bf22a9452758ed0
-      internalID: -220206738
+      spriteID: ed0ae1bdd4c7815439df0da4e95be908
+      internalID: -1343882126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_14
+      name: LightShadow_32x32_14
       rect:
         serializedVersion: 2
         x: 64
@@ -431,20 +431,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d40fc98d22cd8ed4ea370a083d20e65e
-      internalID: -1714676668
+      spriteID: 9d097455339eedc45bd42b7ef9f9c67f
+      internalID: -702779888
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Light_32x32_15
+      name: LightShadow_32x32_15
       rect:
         serializedVersion: 2
         x: 96
@@ -452,14 +452,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 346d74ea785f0e147b8aabb489fd6c2d
-      internalID: -1651731093
+      spriteID: bed4462e8db74fd41a47fd4757a46254
+      internalID: -657084649
       vertices: []
       indices: 
       edges: []
@@ -475,22 +475,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Light_32x32_0: 1671783396
-      Light_32x32_1: 1299899118
-      Light_32x32_10: 1631447024
-      Light_32x32_11: -91897522
-      Light_32x32_12: -2035741764
-      Light_32x32_13: -220206738
-      Light_32x32_14: -1714676668
-      Light_32x32_15: -1651731093
-      Light_32x32_2: -164265871
-      Light_32x32_3: -1920558958
-      Light_32x32_4: -1613546825
-      Light_32x32_5: -1981190389
-      Light_32x32_6: -1230284276
-      Light_32x32_7: 1728535356
-      Light_32x32_8: 940953936
-      Light_32x32_9: -1690141230
+      LightShadow_32x32_0: -392706645
+      LightShadow_32x32_1: -446236904
+      LightShadow_32x32_10: -109030179
+      LightShadow_32x32_11: -1022752101
+      LightShadow_32x32_12: 1983111372
+      LightShadow_32x32_13: -1343882126
+      LightShadow_32x32_14: -702779888
+      LightShadow_32x32_15: -657084649
+      LightShadow_32x32_2: 282978024
+      LightShadow_32x32_3: 1428440022
+      LightShadow_32x32_4: 1996591008
+      LightShadow_32x32_5: -1725217891
+      LightShadow_32x32_6: -1041479348
+      LightShadow_32x32_7: 847201323
+      LightShadow_32x32_8: 2141939409
+      LightShadow_32x32_9: 899887791
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

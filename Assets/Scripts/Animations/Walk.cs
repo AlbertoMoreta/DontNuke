@@ -73,10 +73,12 @@ public class Walk : MonoBehaviour {
                 spriteRenderer.sortingLayerName = "Default";
             }
         } else {
-            animator.SetBool("Forward", false);
-            animator.SetBool("Backwards", false);
-            animator.SetBool("Left", false);
-            animator.SetBool("Right", false);
+            if (shouldAnimate) {
+                animator.SetBool("Forward", false);
+                animator.SetBool("Backwards", false);
+                animator.SetBool("Left", false);
+                animator.SetBool("Right", false);
+            }
         }
     }
 
