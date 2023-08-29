@@ -66,7 +66,7 @@
          "subtitles":[
             {
                "characterName": "Alberto",
-               "text":"Mierda.",
+               "text":"Oh no.",
                "position": -1,
                "duration":4
             },
@@ -396,7 +396,7 @@
          "subtitles":[
             {
                "characterName": "AlbertoWalk",
-               "text":"Joder, aquí está el error.",
+               "text":"Lo encontré, aquí está el error.",
                "position": -1,
                "duration":4
             },
@@ -408,7 +408,7 @@
             },
             {
                "characterName": "AlbertoWalk",
-               "text":"Deséame suerte ",
+               "text":"Voy a entrar. Deséame suerte ",
                "position": -1,
                "duration":4
             }
@@ -433,6 +433,30 @@
             {
                "characterName": "Mario",
                "text":"¡Genial!, voy a apagar y volver a encender.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"14-found-food",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"A ver si limpiamos de vez en cuando el ordenador. Que esto está lleno de restos de comida.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"15-found-folder",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Mejor no mires lo que hay dentro de esa carpeta. Haz como si no hubieras visto nada.",
                "position": 1,
                "duration":4
             }

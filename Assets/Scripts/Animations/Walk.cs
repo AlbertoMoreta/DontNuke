@@ -73,18 +73,23 @@ public class Walk : MonoBehaviour {
                 spriteRenderer.sortingLayerName = "Default";
             }
         } else {
-            if (shouldAnimate) {
-                animator.SetBool("Forward", false);
-                animator.SetBool("Backwards", false);
-                animator.SetBool("Left", false);
-                animator.SetBool("Right", false);
-            }
+            animator.SetBool("Forward", false);
+            animator.SetBool("Backwards", false);
+            animator.SetBool("Left", false);
+            animator.SetBool("Right", false);
+            
         }
     }
 
     void OnTriggerEnter2D(Collider2D col) {
-        Debug.Log("On trigger enter");
-        StartCoroutine(FoundHole());
+        if (col.name == "Hole") {
+            Debug.Log("On trigger enter");
+            StartCoroutine(FoundHole());
+        } else if (col.name == "Food"){
+            DialogManager.Instance.StartDialog("14-found-food");
+        } else if (col.name == "Folder"){
+            DialogManager.Instance.StartDialog("15-found-folder");
+        }
     }
 
     IEnumerator FoundHole() {
@@ -103,7 +108,9 @@ public class Walk : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D col) {
         Debug.Log("On trigger exit");
-        canJump = true;
+        if (col.name == "Hole") {
+            canJump = true;
+        }
     }
 
     IEnumerator EnterHole(){

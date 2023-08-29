@@ -66,7 +66,7 @@
          "subtitles":[
             {
                "characterName": "Alberto",
-               "text":"Fuck.",
+               "text":"Oh no.",
                "position": -1,
                "duration":4
             },
@@ -396,7 +396,7 @@
          "subtitles":[
             {
                "characterName": "AlbertoWalk",
-               "text":"Damn, here's the error.",
+               "text":"Found it, here's the error.",
                "position": -1,
                "duration":4
             },
@@ -408,7 +408,7 @@
             },
             {
                "characterName": "AlbertoWalk",
-               "text":"Give me luck.",
+               "text":"I'm going in. Wish me luck.",
                "position": -1,
                "duration":4
             }
@@ -433,6 +433,30 @@
             {
                "characterName": "Mario",
                "text":"Great! Let me turn it off and on again.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"14-found-food",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Hey, let's give the computer a quick clean every now and then, shall we? It's got some food crumbs hanging out in there!",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"15-found-folder",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"You better not look at what's inside that folder. Pretend like you haven't seen anything.",
                "position": 1,
                "duration":4
             }
