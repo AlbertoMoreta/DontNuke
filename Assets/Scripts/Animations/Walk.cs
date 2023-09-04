@@ -82,6 +82,8 @@ public class Walk : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D col) {
+        
+        Debug.Log(col.name);
         if (col.name == "Hole") {
             Debug.Log("On trigger enter");
             StartCoroutine(FoundHole());
@@ -89,6 +91,16 @@ public class Walk : MonoBehaviour {
             DialogManager.Instance.StartDialog("14-found-food");
         } else if (col.name == "Folder"){
             DialogManager.Instance.StartDialog("15-found-folder");
+        } else if (col.name == "MonkeyHead") {
+            Debug.Log("Monkey");
+            System.Random rnd = new System.Random();
+            int dialogNumber = rnd.Next(3);
+            Debug.Log("Dialog Number: " + dialogNumber);
+            switch(dialogNumber){
+                case 0: DialogManager.Instance.StartDialog("16-found-monkey-1"); break;
+                case 1: DialogManager.Instance.StartDialog("16-found-monkey-2"); break;
+                case 2: DialogManager.Instance.StartDialog("16-found-monkey-3"); break;
+            }
         }
     }
 
@@ -118,7 +130,9 @@ public class Walk : MonoBehaviour {
         holeFront.GetComponent<SpriteRenderer>().enabled = true;
         rigidBody.gravityScale = gravity;
         insideTheFall.SetActive(true);
-        yield return new WaitForSeconds(19.5f);
+        yield return new WaitForSeconds(1f);
+        holeFront.GetComponent<SpriteRenderer>().enabled = false;
+        yield return new WaitForSeconds(18.5f);
         insideTheFall.SetActive(false);
         DialogManager.Instance.StartDialog("13-fix-hole");
         yield return new WaitWhile(() => DialogManager.Instance.IsDialogPlaying());

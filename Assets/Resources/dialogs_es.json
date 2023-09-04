@@ -461,6 +461,42 @@
                "duration":4
             }
          ]
+      },
+      {
+         "key":"16-found-monkey-1",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Miaumiaumiaumiaumiaumiaumiaumiau.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"16-found-monkey-2",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Wow, con ese cacharro puedes leer mis pensamientos.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"16-found-monkey-3",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Aparta eso, que no me concentro.",
+               "position": 1,
+               "duration":4
+            }
+         ]
       }
 
       

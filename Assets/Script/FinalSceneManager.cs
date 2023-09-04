@@ -66,6 +66,7 @@ public class FinalSceneManager : MonoBehaviour {
     void Finish() {
         uint error =  0x00000000;
         DisplayMessage("ERROR", new LocalizedString("UI", "disk_not_formated").GetLocalizedString(), error, MESSAGE_TYPE.ERROR);
+        DisplayMessage("ERROR", new LocalizedString("UI", "thanks_for_playing").GetLocalizedString(), error, MESSAGE_TYPE.ERROR);
         Application.Quit();
     }
 }

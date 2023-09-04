@@ -123,6 +123,10 @@ MonoBehaviour:
     m_Localized: Enter 'help' if you experiment any problem with the game
     m_Metadata:
       m_Items: []
+  - m_Id: 6406944208216064
+    m_Localized: Thanks for playing!
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

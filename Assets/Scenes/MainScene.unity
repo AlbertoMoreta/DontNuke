@@ -1463,9 +1463,21 @@ PrefabInstance:
       propertyPath: insideTheFall
       value: 
       objectReference: {fileID: 1865373370}
+    - target: {fileID: 2309370489599311805, guid: 32ccae722db19184ca46605ba2356f3b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866157410581535800, guid: 32ccae722db19184ca46605ba2356f3b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3120511316294758942, guid: 32ccae722db19184ca46605ba2356f3b, type: 3}
       propertyPath: m_Name
       value: AlbertoWalkLanter
+      objectReference: {fileID: 0}
+    - target: {fileID: 3120511316294758942, guid: 32ccae722db19184ca46605ba2356f3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4209126232215942631, guid: 32ccae722db19184ca46605ba2356f3b, type: 3}
       propertyPath: insideTheFall

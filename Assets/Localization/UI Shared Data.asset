@@ -111,6 +111,10 @@ MonoBehaviour:
     m_Key: disk_not_formated
     m_Metadata:
       m_Items: []
+  - m_Id: 6406944208216064
+    m_Key: thanks_for_playing
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -461,6 +461,42 @@
                "duration":4
             }
          ]
+      },
+      {
+         "key":"16-found-monkey-1",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Meowmeowmeowmeowmeowmeowmeowmeowmeow.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"16-found-monkey-2",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Wow, with that thing you can read my thoughts.",
+               "position": 1,
+               "duration":4
+            }
+         ]
+      },
+      {
+         "key":"16-found-monkey-3",
+         "audioPath": "",
+         "subtitles":[
+            {
+               "characterName": "Mario",
+               "text":"Put that away, I can't concentrate.",
+               "position": 1,
+               "duration":4
+            }
+         ]
       }
 
       

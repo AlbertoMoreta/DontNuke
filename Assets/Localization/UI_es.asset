@@ -119,6 +119,10 @@ MonoBehaviour:
     m_Localized: El disco no ha podido formatearse.
     m_Metadata:
       m_Items: []
+  - m_Id: 6406944208216064
+    m_Localized: "\xA1Gracias por jugar!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

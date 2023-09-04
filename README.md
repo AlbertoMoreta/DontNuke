@@ -14,7 +14,7 @@ El juego está disponible para descargar de manera gratuita en [itch.io](https:/
 <table border="0">
     <tr>
         <td><a href="https://moreta.itch.io/"><img alt="Programación: Alberto Moreta" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2tqNjcybjAyYnA2eTczMHF6eWNtcDl2cjd6YnV1a2dqcHJwemJqdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/EhFME8k47Q2mrUbfa0/giphy.gif" /></a></td>
-        <td><a href="https://mariomisas.itch.io/"><img alt="Arte: Mario Misas" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHRpMTB0Nmc2dDBuMTAzaDRuZHNtcnZ1eWxkbTVyM2s4YTh1a2VtMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/Ber1xlgMvW9GIYSCg4/giphy.gif" /></a></td>
+        <td><a href="https://mariomisas.itch.io/"><img alt="Arte: Mario Misas" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3NpMm4ydjRranF5NTVvazBjdXdoeWsweGYzZTA0c2Rtc2FreWIweCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/twHUxJT6a6R4UwvBbp/giphy.gif" /></a></td>
     </tr>
 </table>
 
@@ -44,3 +44,10 @@ La licenciante no puede revocar estas libertades en tanto usted siga los términ
 * **CompartirIgual** — Si remezcla, transforma o crea a partir del material, debe distribuir su contribución bajo la lamisma licencia del original.
 
 No hay restricciones adicionales — No puede aplicar términos legales ni medidas tecnológicas que restrinjan legalmente a otras a hacer cualquier uso permitido por la licencia.
+
+
+
+## Assets Externos
+[Free Draw - Simple Drawing on Sprites/2D Textures](https://assetstore.unity.com/packages/tools/painting/free-draw-simple-drawing-on-sprites-2d-textures-113131)
+[Digital Display Font](https://www.dafont.com/digital-display.font)
+[Perfect DOS VGA 437 font](https://www.dafont.com/perfect-dos-vga-437.font)
